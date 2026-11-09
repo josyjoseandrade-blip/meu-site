@@ -1,0 +1,118 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-between ;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 5%;
+  align-items:center ;
+  height: 50px;
+    
+}
+header>h1{
+    font-size: 35px;
+}
+nav{
+    display: flex;
+    gap: 25px;
+}
+nav>a{
+    text-decoration: none;
+    padding: 0px;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+nav>a:hover{
+    text-decoration:underline;
+   
+    text-decoration-color:blue ;
+    text-decoration-thickness:2px ;
+ text-underline-offset: 6px;
+   transform: scale(1.05);
+ 
+}
+   
+header>h1>span{
+    color: blue;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+  
+}
+#principal{
+    min-height: 82px;
+    padding: 98px 7%;
+background-image:url(pexels-tara-winstead-8386440.jpg) ;
+background-size: 1680px;
+ackground-position: center;
+
+}
+#principal>#d{
+    background-color: rgb(45, 45, 78);
+}
+main>#ti>#pti{
+max-width: 550;
+}
+main>#principal >div>#ti{
+    font-size: 3.2rem;
+}
+main>#principal>.forum>#ti>span{
+    color: blue;
+}
+.cards{
+   display: flex;
+   gap: 30px;
+  justify-content: center;
+}
+.card{
+   width: 300px;
+   padding: 20px;
+   background-color: #151515;
+}
+
+
+.card>img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.produtos>h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.produtos>h2:hover{
+      text-decoration:underline;
+   
+    text-decoration-color:blue ;
+    text-decoration-thickness:4px ;
+ text-underline-offset: 8px;
+   transform: scale(1.05);
+}
+.card{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity0.3s;
+    background-color: rgba(0, 0, 0,0.3);
+}
+.card:hover::before{
+    opacity: 1;
+   
+}
+.card:hover{
+    transform: scale(1.05);
+}
